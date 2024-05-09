@@ -43,6 +43,19 @@ opensciencegrid/osg-wn:3.3-el6
 opensciencegrid/osg-wn:3.3-testing-el7
 opensciencegrid/osg-wn:3.3-devel-el7
 
+# htc/ - this are the images replacing the osgvo-* ones
+hub.opensciencegrid.org/htc/centos:7
+hub.opensciencegrid.org/htc/debian:12
+hub.opensciencegrid.org/htc/gromacs:2023.4
+hub.opensciencegrid.org/htc/matlab-runtime:R2023a
+hub.opensciencegrid.org/htc/rocky:8
+hub.opensciencegrid.org/htc/rocky:9
+hub.opensciencegrid.org/htc/rocky:8-cuda-11.0.3
+hub.opensciencegrid.org/htc/scikit-learn:1.3
+hub.opensciencegrid.org/htc/tensorflow:2.15
+hub.opensciencegrid.org/htc/ubuntu:20.04
+hub.opensciencegrid.org/htc/ubuntu:22.04
+
 # OSGVO
 opensciencegrid/npjoodi
 opensciencegrid/osgvo-ants
@@ -134,8 +147,6 @@ cnatzke/grsisort:*
 dmbala/r-3.4.1
 dmbala/r-ebcrimage
 drtmfigy/hjets_herwig7
-drtmfigy/herwig_hjets
-drtmfigy/fbps
 econtal/numpy-mkl:latest
 efajardo/osgvo-nsides:latest
 efajardo/astroflow:latest
@@ -160,8 +171,10 @@ k3jph/torch-diffeq:latest
 k3jph/python-optimization:latest
 leofang/cthyb-ohmic
 m8zeng/julia-packages
+hub.opensciencegrid.org/matyasosg/testimage:latest
 mfrayer/perl-stats
 molssi/qcarchive_worker_openff:*
+nathanjmcl/gpaw-vdw-repository:latest
 nipy/mindboggle
 nkern/21cmfast_env
 npanicker/r-desolve:*
@@ -224,6 +237,9 @@ physino/root:*
 ecpe4s/e4s-cuda:22.11
 ecpe4s/e4s-rocm:22.11
 ecpe4s/e4s-oneapi:22.11 
+ecpe4s/e4s-cuda:23.05
+ecpe4s/e4s-rocm:23.05
+ecpe4s/e4s-oneapi:23.05
 
 # MINT project (rynge)
 ankushumn/rsatest
@@ -258,12 +274,10 @@ alpine
 whit2333/eic-slic:latest
 argonneeic/evochain:v*
 argonneeic/fpadsim:v*
-electronioncollider/escalate:latest
 eicweb/jug_xl:*-stable
-eicweb/jug_xl:*-beta
-eicweb/jug_xl:*-alpha
-eicweb/jug_xl:testing
 eicweb/jug_xl:nightly
+eicweb/eic_xl:*-stable
+eicweb/eic_xl:nightly
 raygunkennesaw/tensorflow:1.2.0-py3
 
 # Common biology tools
@@ -273,7 +287,6 @@ cyverse/rsem-prepare
 
 # IGWN (Internation Gravitational Wave Network) worker nodes
 igwn/lalsuite-dev:el7
-igwn/lalsuite-dev:stretch
 igwn/software:el7
 igwn/software:el7-testing
 igwn/software:stretch
@@ -282,7 +295,7 @@ igwn/software:stretch-proposed
 # LIGO PyCBC compute nodes
 pycbc/pycbc-el7:v1.16.12
 pycbc/pycbc-el7:v1.18.3
-pycbc/pycbc-el8:v2.2.*
+pycbc/pycbc-el8:v2.3.*
 pycbc/pycbc-el8:latest
 
 # CMS worker node
@@ -291,9 +304,25 @@ bbockelm/cms:rhel7
 cmssw/cms:rhel6
 cmssw/cms:rhel7
 cmssw/cms:rhel8
+cmssw/cms:rhel9
+cmssw/cms:rhel6-x86_64
+cmssw/cms:rhel7-x86_64
+cmssw/cms:rhel8-x86_64
+cmssw/cms:rhel9-x86_64
+cmssw/cms:rhel8-aarch64
+cmssw/cms:rhel9-aarch64
+cmssw/cms:rhel8-ppc64le
 cmssw/cms:rhel6-itb
 cmssw/cms:rhel7-itb
 cmssw/cms:rhel8-itb
+cmssw/cms:rhel9-itb
+cmssw/cms:rhel6-itb-x86_64
+cmssw/cms:rhel7-itb-x86_64
+cmssw/cms:rhel8-itb-x86_64
+cmssw/cms:rhel9-itb-x86_64
+cmssw/cms:rhel8-itb-aarch64
+cmssw/cms:rhel9-itb-aarch64
+cmssw/cms:rhel8-itb-ppc64le
 cmssw/cms:rhel6-m*
 cmssw/cms:rhel7-m*
 cmssw/cms:rhel8-m*
@@ -330,6 +359,11 @@ wipac/fasig_scalable_radio_array
 wipac/npx-el6:latest
 wipac/npx-el6:test
 wipac/skylab:1.0.0
+wipac/pyglidein-el8-cuda11:main
+icecube/icetray-ml:icetray-v1.8.1-cuda11.8-cudnn8-graphnet-ubuntu22.04-devel
+icecube/icetray-base:devel-rocky8-cuda11.8.0-cudnn8
+icecube/icetray-base:devel-ubuntu22.04-cuda11.8.0-cudnn8
+
 
 #fMRI Prep
 poldracklab/fmriprep
@@ -376,9 +410,11 @@ brainlife/mcr:neurodebian1604-r2017a
 brainlife/mcr:r2019a
 
 # Fermilab VO - Fermigrid worker nodes
+fermilab/fnal-wn-el9:*
 fermilab/fnal-wn-el8:*
 fermilab/fnal-wn-sl7:*
 fermilab/fnal-wn-sl6:*
+fermilab/fnal-dev-sl7:*
 fermilab/benchmark:*
 
 # NOvA Experiment
@@ -396,6 +432,7 @@ ghcr.io/novaexperiment/nova-sl7-novat2k:v4_fixcosmicsrock
 ghcr.io/novaexperiment/nova-sl7-novat2k:v5_setasimov
 ghcr.io/novaexperiment/nova-sl7-novat2k:v6c_nightmareplus
 ghcr.io/novaexperiment/nova-sl7-novat2k:v7_pvalue
+ghcr.io/novaexperiment/nova-sl7-novat2k:scaledasimov
 ghcr.io/novaexperiment/sl7:latest
 ghcr.io/novaexperiment/sl7:master
 ghcr.io/novaexperiment/sl7:mini
@@ -419,6 +456,7 @@ hub.opensciencegrid.org/htcondor/hpc-annex-pilot:el8
 hub.opensciencegrid.org/htcondor/hpc-annex-pilot:latest
 
 # LIGO - user defined images
+containers.ligo.org/bayeswave/igwn-wave-compare:latest
 containers.ligo.org/cody.messick/container:latest
 containers.ligo.org/joshua.willis/pycbc:latest
 containers.ligo.org/james-clark/bayeswave:latest
@@ -442,12 +480,14 @@ containers.ligo.org/aei-tgr/cvmfs-images/pseob:fti-latest
 containers.ligo.org/aei-tgr/cvmfs-images/pseob:testing
 containers.ligo.org/aei-tgr/cvmfs-images/pseob:envs
 containers.ligo.org/aei-tgr/cvmfs-images/seob-rom:latest
+containers.ligo.org/aei-tgr/cvmfs-images/seob-rom:v5
 containers.ligo.org/alan.knee/lal-images/lalsuite-fstatbinary:latest
 ghcr.io/ml4gw/hermes/tritonserver:22.12
 ghcr.io/ml4gw/hermes/tritonserver:22.07
 ghcr.io/ml4gw/hermes/tritonserver:22.02
 ghcr.io/ml4gw/pinto:main
 containers.ligo.org/yannick.lecoeuche/glitch-pe-container/glitch-pe:latest
+containers.ligo.org/computing/distributed/igwn-pool-exorciser/gpu_burn:latest
 
 # LIGO/VIRGO/KAGRA containers
 containers.ligo.org/lscsoft/lalsuite/lalsuite-v6.59:el7
@@ -461,19 +501,20 @@ containers.ligo.org/lscsoft/bayeswave:v1.0.6
 containers.ligo.org/lscsoft/bayeswave:v1.0.7
 containers.ligo.org/computing/rucio/containers/rucio-clients:latest
 containers.ligo.org/lscsoft/gstlal:master
-containers.ligo.org/lscsoft/gstlal:o4-offline-dev
-containers.ligo.org/lscsoft/gstlal:o4-online-dev
+containers.ligo.org/lscsoft/gstlal:osg-dev
 containers.ligo.org/snax/snax:v0.5.1
 containers.ligo.org/snax/snax:v0.5.2
 containers.ligo.org/lmxbcrosscorr/containers:crosscorr-lattice-dev-clean
 containers.ligo.org/echoes-model-independent/bayeswave-echoes-image:v1.0.7_echoes_reviewed
 
-# Lancaster U Muon g-2 Beamline Simulations
-valetov/g4bl:*
+# Lancaster U, Muon g-2 Beamline Simulations
 valetov/beam_track:*
-valetov/gm2dev:*
+
+# Michigan State U, Center for Beam Theory and Dynamical Systems
 valetov/cosy:*
-engineren/calogan-docker:latest
+valetov/g4bl:*
+valetov/gm2dev:*
+valetov/glyfada:*
 
 # Mu2e
 egstern/centos7-synergia2:*
@@ -484,6 +525,7 @@ egstern/wn-synergia2:latest
 
 # Mu3e
 4ndr85/mu3e:v2
+4ndr85/mu3e:v3
 
 #NEURON+Brian2+Python
 rtikid/python2-numpy-scipy-sympy-neuron-brian2-netpyne-inspyred-pyabf
@@ -510,6 +552,8 @@ nrstickley/jsp_apps:*
 
 #American Museum of Natural History (AMNH)
 amnh/osgimages:*
+amnh/herpetology-pseudo-it:*
+amnh/herpetology_iqtree_r_quibl:*
 
 # Single-cell Inference of Networks using Granger Ensembles (SINGE)
 agitter/singe:latest
@@ -582,6 +626,20 @@ jcha40/python_env:latest
 # University of Wisconsin - Jason Kwan Lab
 jasonkwan/autometa:latest
 
+# UW-Madison & Reed College -- Gitter Lab, SPRAS project
+# https://hub.docker.com/r/reedcompbio
+reedcompbio/omics-integrator-1:latest
+reedcompbio/omics-integrator-1:no-conda
+reedcompbio/omics-integrator-2:v2
+reedcompbio/pathlinker:latest
+reedcompbio/meo:latest
+reedcompbio/mincostflow:latest
+reedcompbio/domino:latest
+reedcompbio/allpairs:latest
+reedcompbio/py4cytoscape:v2
+reedcompbio/tiedie:latest
+reedcompbio/random-walk-with-restart:latest
+
 # Network for Computational Modeling in the Social and Ecological Sciences (CoMSES Net, https://comses.net) images
 comses/osg-netlogo:*
 
@@ -590,6 +648,10 @@ ncbi/pgap:2022-04-14.build6021
 
 # STAR experiment at Brookhaven National Lab images
 ghcr.io/star-bnl/star-sw
+ghcr.io/star-bnl/star-sw:SL23f
+ghcr.io/star-bnl/star-sw:SL23e
+ghcr.io/star-bnl/star-sw:SL23d
+ghcr.io/star-bnl/star-sw:SL23c
 ghcr.io/star-bnl/star-sw:SL23b
 ghcr.io/star-bnl/star-sw:SL23a
 ghcr.io/star-bnl/star-sw:SL22c
