@@ -3,7 +3,6 @@
 
 # First, some generic CentOS images:
 centos:latest
-centos:centos6
 centos:centos7
 
 # Fairly common Linux distros
@@ -49,6 +48,7 @@ hub.opensciencegrid.org/htc/debian:12
 hub.opensciencegrid.org/htc/gromacs:2023.4
 hub.opensciencegrid.org/htc/gromacs:2024.2
 hub.opensciencegrid.org/htc/matlab-runtime:R2023a
+hub.opensciencegrid.org/htc/minimal:0
 hub.opensciencegrid.org/htc/rocky:8
 hub.opensciencegrid.org/htc/rocky:9
 hub.opensciencegrid.org/htc/rocky:8-cuda-11.0.3
@@ -66,9 +66,6 @@ opensciencegrid/osgvo-beagle
 opensciencegrid/osgvo-biomedinfo
 opensciencegrid/osgvo-blaylockbk
 opensciencegrid/osgvo-debian-10:latest
-opensciencegrid/osgvo-el6
-opensciencegrid/osgvo-el6-cuda
-opensciencegrid/osgvo-el6-feltus
 opensciencegrid/osgvo-el7
 opensciencegrid/osgvo-el7-cuda10:*
 opensciencegrid/osgvo-el8
@@ -95,14 +92,6 @@ opensciencegrid/tensorflow-gpu:*
 paesanilab/psi4:latest
 pegasus/osg-el7:latest
 rinnocente/qe-full-6.2.1:latest
-rynge/einsteintoolkit:latest
-rynge/sra:latest
-rynge/osg-mcf10-mod:latest
-rynge/osg-tensorflow-gpu:latest
-rynge/respicio:latest
-rynge/tensorflow-cowsay:latest
-ssthapa/freesurferosg:5.1
-ssthapa/freesurferosg:5.3
 ssthapa/freesurferosg:6.0
 ssthapa/freesurferosg:latest
 lukasheinrich/folding:*
@@ -242,26 +231,6 @@ ecpe4s/e4s-oneapi:22.11
 ecpe4s/e4s-cuda:23.05
 ecpe4s/e4s-rocm:23.05
 ecpe4s/e4s-oneapi:23.05
-
-# MINT project (rynge)
-ankushumn/rsatest
-mintproject/ankush:latest
-mintproject/base-ubuntu16:latest
-mintproject/base-ubuntu18:latest
-mintproject/floodseverityindex:*
-mintproject/cycles:*
-mintproject/dssat:*
-mintproject/economic:*
-mintproject/kimetrica:*
-mintproject/pihm:*
-mintproject/hand:*
-mintproject/sentinel:*
-mintproject/pihm2cycles:*
-mintproject/weather-generator:*
-mintproject/mintviz:*
-mintproject/modflow-2005:*
-mintproject/topoflow:*
-mintproject/droughtindices:*
 
 # XENONnT (rynge)
 xenonnt/base-environment:*
